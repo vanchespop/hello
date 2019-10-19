@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" >
+<html>
+<head>
+
+<title>SupremeBot</title>
+<META http-equiv="Content-Type content=text/html; charset=windows-1251">
+<meta name="Access-Control-Allow-Origin" content="*" />
+    <meta name="Access-Control-Allow-Headers" content="*" />
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+</head>
+
+
+<body >
+<h2><img src="../img/logo.png"  ></h2>
+ <h2>ORDER DETAILS</h2>
+
+ <hr color="red"></hr>
+ <form id="goform">
+ 	<input type="button" id="btn"  value="Buy" />
+ 	<a href="options.html"><input type="button" id="options"   value="Settings"  /></a>
+ </form>
+ <script src="../scripts/supbot.js"></script>
+<h2 class="header">billing/shipping information</h2>
+<form class="data">
+    <div class="frm"><div class="label" id="1" >category</div>
+	<select class="field select"  name="category" id="110" value="">
+    <option>jackets</option>
+    <option>shirts</option>
+    <option>tops_sweaters</option>
+    <option>sweatshirts</option>
+    <option>pants</option>
+    <option>t-shirts</option>
+    <option>hats</option>
+    <option>bags</option>
+    <option selected="selected"  >accessories</option>
+    <option>skate</option>
+
+
+	</select>
+	</div>
+
+	<div class="frm"><div class="label" id="2" >item</div>
+	<input class="field" type="text" name="item" id="210"></input>
+	</div>
+
+	<div class="frm"><div class="label" id="3" >size(optional)</div>
+	<input class="field" type="text" name="name" id="310" ></input>
+	</div>
+
+	<div class="frm"><div class="label" id="4" >color(optional)</div>
+	<input class="field" type="text" name="name" id="410" ></input>
+	</div>
+
+	<div class="frm"><div class="label" id="5" >full name</div>
+	<input class="field" type="text" name="name" id="510"></input>
+	</div>
+
+
+	  <div class="frm"><div class="label" id="6">email</div>
+      <input class="field" type="text" name="email" id="610"></input>
+      </div>
+
+
+
+
+    <div class="frm" ><div class="label"  id="7" >tel</div>
+	<input class="field" type="text" name="tel" id="710"></input></div>
+
+	<div class="frm"><div class="label" id="8">address</div>
+	<input class="field" type="text" name="address" id="810"></input></div></div>
+
+	<div class="frm"><div class="label invisible" id="9" >&nbsp</div>
+	<input class="field" type="text" name="address1" id="910"></input></div></div>
+
+	<div class="frm"><div class="label invisible" id="10" >&nbsp</div>
+	<input class="field" type="text" name="address2" id="1010"></input></div></div>
+
+	<div class="frm"><div class="label" id="11" >city</div>
+	<input class="field" type="text" name="city" id="1110"></input></div>
+
+	<div class="frm"><div class="label" id="12"  >postcode</div>
+	<input class="field" type="text" name="postcode" id="1210"></input></div>
+
+	<div class="frm"><div class="label" id="13" >country</div>
+	<select class="field select" name="country"  id="1310">
+		<option value="NB">UK (N. IRELAND)</option>
+<option value="">-</option>
+<option value="AT">AUSTRIA</option>
+<option value="BY">BELARUS</option>
+<option value="BE">BELGIUM</option>
+<option value="BG">BULGARIA</option>
+<option value="HR">CROATIA</option>
+<option value="CZ">CZECH REPUBLIC</option>
+<option value="DK">DENMARK</option>
+<option value="EE">ESTONIA</option>
+<option value="FI">FINLAND</option>
+<option value="FR">FRANCE</option>
+<option value="DE">GERMANY</option>
+<option value="GR">GREECE</option>
+<option value="HU">HUNGARY</option>
+<option value="IS">ICELAND</option>
+<option value="IE">IRELAND</option>
+<option value="IT">ITALY</option>
+<option value="LV">LATVIA</option>
+<option value="LT">LITHUANIA</option>
+<option value="LU">LUXEMBOURG</option>
+<option value="MC">MONACO</option>
+<option value="NL">NETHERLANDS</option>
+<option value="NO">NORWAY</option>
+<option value="PL">POLAND</option>
+<option value="PT">PORTUGAL</option>
+<option value="RO">ROMANIA</option>
+<option selected="selected" value="RU">RUSSIA</option>
+<option value="SK">SLOVAKIA</option>
+<option value="SI">SLOVENIA</option>
+<option value="ES">SPAIN</option>
+<option value="SE">SWEDEN</option>
+<option value="CH">SWITZERLAND</option>
+<option value="TR">TURKEY</option>
+	</select> </div>
+
+
+
+</form>
+
+<h2 class="header">credit card information</h2>
+<form class="data" style="height: 114px;" >
+	<div class="frm"><div class="label" id="14"  >type</div>
+	<select class="select field" name="cardtype" id="1410">
+<option value="american_express">American Express</option>
+<option value="visa">Visa</option><option value="master">Mastercard</option>
+<option value="solo">Solo</option>
+<option value="paypal">PayPal</option>
+	</select></div>
+
+	<div class="frm"><div class="label" id="15" >number</div>
+	<input class="field" type="text" name="cardnumber" id="1510"></input></div>
+
+	<div class="frm"><div class="label" id="16" >exp. date</div>
+	<select class="field select" style="width: 50px;" name="month" id="1610">
+	<option value="02">02</option>
+	<option value="03">03</option>
+	<option value="04">04</option>
+	<option value="05">05</option>
+	<option value="06">06</option>
+	<option value="07">07</option>
+	<option value="08">08</option>
+	<option value="09">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+
+	</select>
+	<select class="field select" style="width: 65px;" name="year" id="1610">
+	<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+<option value="2027">2027</option>
+
+	</select>
+	</div>
+
+<div class="frm"><div class="label" id="17" >CVV</div>
+	<input class="field" maxlength="4" size="4" type="text" name="cvv" style="width: 50px;" id="1710"></input></div>
+
+</form>
+
+</body></html>
