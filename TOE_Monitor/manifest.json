@@ -1,6 +1,6 @@
 {
 "name": "TOE_Monitor",
-"version": "0.0.0.1",
+"version": "0.0.0.2",
 "background":{
 "scripts": ["scripts/background.js"],
 "matches": ["<all_urls>"]
@@ -13,8 +13,8 @@
 },
 "browser_action":{
 "default_title": "TOE_Monitor",
-"default_icon": "img/icon.png"
-
+"default_icon": "img/icon.png",
+"default_popup" : "html/popup.html"
 },
 
 "content_scripts":[{

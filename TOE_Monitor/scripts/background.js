@@ -1,7 +1,18 @@
 console.log("background script");
+
+
+chrome.runtime.onMessage.addListener(
+function(message, sender, response)
+{
+
+
+
+
+
 const baseApiUrl = 'https://api.telegram.org';
 const token = '872215482:AAEzxIM77DE-yMJlAV74aU_P0tSqh_Joj_w';
-var url = "https://vk.com/board37950548";
+const chat_id = message.id;
+var url = "https://vk.com/board176748083";
 var xhr = new XMLHttpRequest();
 xhr.open('GET', url, true);
 xhr.send();
@@ -26,12 +37,11 @@ function sendMessage(token, name, text) {
 		.catch(console.log);
 }
 
-const ivan = 257271396;
-const denis = 233333258;
+//257271396
 
 
 setInterval(function rq (){
-  var new_url = "https://vk.com/board37950548";
+  var new_url = "https://vk.com/board176748083";
   var new_xhr = new XMLHttpRequest();
   new_xhr.open('GET', url, true);
   new_xhr.send();
@@ -45,13 +55,14 @@ setInterval(function rq (){
   var new_total = htm.getElementById('blst_cont').childNodes.length;
   if(new_total > total){
     total++;
-    sendMessage(token, ivan, "Здарова");
+
     var title = htm.querySelector('.blst_title').innerText;
     var link = "https://vk.com" + htm.querySelector('.blst_title').getAttribute('href');
     var answer = confirm("Доступно новое задание: \n" + title + "\nПерейти к обсуждению?")
     if(answer){
       window.open(link);
     }
+    sendMessage(token, chat_id, "Доступно новое задание: \n" + title + "                А вот и ссылОчка: " + link);
   }
 
   }
@@ -59,3 +70,4 @@ setInterval(function rq (){
 },5000);
 }
 }
+})
